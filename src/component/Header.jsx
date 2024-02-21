@@ -8,4 +8,4 @@ function Header(props) {
     )
 }
 
-export default header;
+export default Header;

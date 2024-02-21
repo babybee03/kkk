@@ -7,7 +7,6 @@ import Header from "./component/Header";
 import Index_content from "./component/Index_content";
 import Footer from "./component/Footer";
 
-
 function App() {
   let text_01 ='React 학습 - 자유롭게 실습';
   let text_02 = {color: "#f0f", fontSize: "15pt"};
