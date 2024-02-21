@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import img_01 from './img_01.jpg'
 
+import Header from "./component/Header";
+
 function App() {
   let text_01 ='React 학습 - 자유롭게 실습';
   let text_02 = {color: "#f0f", fontSize: "15pt"};
