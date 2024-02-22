@@ -1,11 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Header from "./component/Header";
-import Index_content from "./component/Index_content";
-import Footer from './component/Footer';
 import './component/Header.css';
 import Header_content from './component/Header';
+import Index_content from "./component/Index_content";
 import styles from './App.module.css';
 
 
@@ -17,6 +15,7 @@ function App() {
       <Header_content/>
       <h3 className={styles.module_css_01}>module css 내용입니다</h3>
       <h4 className=".module_css_02">module 내용 2 입니다</h4>
+      <Index_content/>
     </div>
   );
 }
