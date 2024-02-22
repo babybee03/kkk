@@ -1,35 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import img_01 from './img_01.jpg'
-
 import Header from "./component/Header";
 import Index_content from "./component/Index_content";
-import Footer from "./component/Footer";
+import Footer from './component/Footer';
+import './component/Header.css';
+import Header_content from './component/Header';
+import styles from './App.module.css';
+
 
 function App() {
-  let text_01 ='React 학습 - 자유롭게 실습';
-  let text_02 = {color: "#f0f", fontSize: "15pt"};
-
-  function 함수이름() {
-    return '행복한 하루';
-  }
-  return(
-    <div className="App">
-      <div className="site_title">
-        <div style={{color: '#f90', fontSize: "15pt"}}>
-          App Site
-        </div>
-      </div>
-      <div className='img_all'>
-        <img src={img_01} className="img_01"></img>
-      </div>
-      <h4>{text_01}</h4>
-      <h5 style={text_02}>맑은하늘 시원한 바람</h5>
-      <h6>{함수이름()}</h6>
+  return (
+    <div>
+      <h1 className="h1_style">css 직접 import 하기</h1>
+      <p>HTML apply</p>
+      <Header_content/>
+      <h3 className={styles.module_css_01}>module css 내용입니다</h3>
+      <h4 className=".module_css_02">module 내용 2 입니다</h4>
     </div>
-      
-    
   );
 }
+
 export default App;
