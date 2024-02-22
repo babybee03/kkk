@@ -11,18 +11,17 @@ const Header_01 = styled.div`
     color: #333;
     text-align: center;
     transition: 1s ease;
-        &:hover {
-            left: 50px;
-            color: #fff;
-            background-color: #00f;
-            transition: 1s ease;
-        }
+    
+    &:hover {
+        left: 50px;
+        color: #fff;
+        background-color: #00f;
+        transition: 1s ease;
+    }
 `;
 
 export default () => (
-    <div>
-        <Header_01>
-            화면에 나오는 내용
-        </Header_01>  
-    </div>
+    <Header_01>
+        화면에 나오는 내용
+    </Header_01>
 )
