@@ -1,14 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Box from './component/description';
+import Description from './component/description';
+import { FcCloseUpMode } from "react-icons/fc";
+
 
 
 
 function App() {
   return (
     <div>
-      <Box/>
+      <Description/>
+      <FcCloseUpMode />
     </div>
   );
 }
