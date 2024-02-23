@@ -16,6 +16,7 @@ function App() {
       <h3 className={styles.module_css_01}>module css 내용입니다</h3>
       <h4 className=".module_css_02">module 내용 2 입니다</h4>
       <Index_content/>
+      <Index_content_02/>
     </div>
   );
 }
