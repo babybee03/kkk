@@ -1,19 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Description from './component/description';
-import { FcCloseUpMode } from "react-icons/fc";
+import React, {Component} from 'react';
+import {BrowserRouter, Routes, Route, NavLink} from 'react-router-dom';
+import Menu_all from './component/Menu_all';
+import Home from './component/Home';
+import About from './component/About';
+import Shop from './component/Shop'
 
 
-
-
-function App() {
-  return (
-    <div>
-      <Description/>
-      <FcCloseUpMode />
+const App = ()=> {
+  return {
+    <div className="wrap">
     </div>
-  );
+  }
 }
-
-export default App;
+<BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Home/>}/>
+    <Route path="/home" element={<Home/>}/>
+    <Route path="/경로2" element={<About/>}/>
+    <Route path="/경로3" element={<Shop/>}/>
+  </Routes>
+</BrowserRouter>
