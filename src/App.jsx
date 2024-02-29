@@ -158,10 +158,13 @@ export default function Homepage() {
     <>
       <Menu_all>
         <Menu_text>Menu 모음</Menu_text>
-        <Menu_icon>
-          
-        </Menu_icon>
+        <Menu_icon onClick={(
+          function(){
+            setMenuOpen(menuOpen =>!menuOpen)
+          }
+        )}><FaTh/></Menu_icon>
       </Menu_all>
+      
     </>
   )
 }
