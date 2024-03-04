@@ -7,7 +7,7 @@ const Menu_all = styled.div`
   left: 0;
   top: 0;
   width: 200px;
-  height: 50px;
+  height: 200px;
   line-height: 50px;
   font-size: 15pt;
   text-align: center;
@@ -19,7 +19,7 @@ const Nav = styled.nav`
   left: 0;
   top: 50px;
   width: 200px;
-  height: 50px;
+  height: 150px;
   background: #ddd;
   transition: all 0.5s;
 
@@ -164,6 +164,20 @@ export default function Homepage() {
           }
         )}><FaTh/></Menu_icon>
       </Menu_all>
+      <Nav className={menuOpen ? 'act' : ''}>
+          <Menu_01>
+            <Menu_01_text>Home</Menu_01_text>
+            <Menu_01_icon> <FaHome/></Menu_01_icon>
+          </Menu_01>
+          <Menu_02>
+            <menu_02_text>About</menu_02_text>
+            <Menu_02_icon><FaUserAlt/></Menu_02_icon>
+          </Menu_02>
+          <Menu_03>
+            <Menu_03_text>Contact</Menu_03_text>
+            <Menu_03_icon><FaRegHandshake/></Menu_03_icon>
+          </Menu_03>
+      </Nav>
       
     </>
   )
